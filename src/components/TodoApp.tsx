@@ -4,9 +4,6 @@ export const TodoApp = () => {
 
     const [nuevaTarea, setNuevaTarea] = useState<string>('')
     const [listaTareas, setListaTareas] = useState<string[]>([])
-
-
-    
     const handleAddTask = () => {
         if (nuevaTarea.trim() === '') return 
         setListaTareas(tareasAnteriores => [...tareasAnteriores, nuevaTarea])
